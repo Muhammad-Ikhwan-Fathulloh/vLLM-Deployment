@@ -58,4 +58,3 @@ k6 run k6-test-large.js
 - Pastikan Docker dan GPU driver berjalan dengan baik.
 - Pastikan port `8000` terbuka dan bisa diakses.
 - Bisa di-scale dengan `docker compose up --scale vllm=4` untuk multi-replica.
-```
