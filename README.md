@@ -47,6 +47,19 @@ k6 run k6-test-large.js
 
 ---
 
+## 🔍 Model Benchmark Comparison
+
+| Model Name            | Parameters | VRAM (Q4) | Tokens/s (vLLM) | Notes                     |
+|----------------------|------------|-----------|-----------------|---------------------------|
+| Mistral 7B Instruct   | 7B         | ~7 GB     | ~20-40 t/s      | Balanced accuracy & speed |
+| Mistral 3B Instruct   | 3B         | ~4.5 GB   | ~50-80 t/s      | Faster, smaller version   |
+| Gemma 2B              | 2B         | ~3.5 GB   | ~70-100 t/s     | Lightweight, efficient    |
+| TinyLlama 1.1B        | 1.1B       | ~2.8 GB   | ~100-150 t/s    | Super fast, low memory    |
+| Phi-2                 | 2.7B       | ~5 GB     | ~50-80 t/s      | Lightweight, good accuracy|
+| Qwen 1.5B             | 1.5B       | ~3 GB     | ~80-120 t/s     | Multilingual support      |
+
+---
+
 ## ✅ Requirements
 - Docker
 - GPU (minimum 24GB VRAM recommended)
